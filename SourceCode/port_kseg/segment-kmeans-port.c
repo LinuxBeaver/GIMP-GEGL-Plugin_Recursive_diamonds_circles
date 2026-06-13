@@ -283,7 +283,7 @@ get_required_for_output (GeglOperation       *operation,
 {
   GeglRectangle result = *gegl_operation_source_get_bounding_box (operation, "input");
 
-  /* Don't request an infinite plane */
+  /* Donꞌt request an infinite plane */
   if (gegl_rectangle_is_infinite_plane (&result))
     return *roi;
 
